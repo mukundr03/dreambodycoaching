@@ -17,7 +17,7 @@ from email import encoders
 import smtplib
 from src.database import database
 
-SENDER_EMAIL = "dbctesteremail@gmail.com"
+SENDER_EMAIL = "dreambcoaching@gmail.com"
 SENDER_PASS = "qyahwdqeiknagmqa"
 RESOURCE_LIST = ["directory/Resource1.pdf", "directory/Resource2.pdf", "directory/Resource3.pdf", "directory/Resource4.pdf"]
 DIRECTORY_NAME = "src/"
@@ -31,7 +31,7 @@ def send_email(customer_id):
         raise AccessError("Customer does not have access")
     user = users[customer_id]
     recipient_email = user["email"]
-    content = "Dear " + user["name"] + ", \nPlease find attached the free resources to help you achieve your fitness goals.\n\nYours sincerely,\nDream Body Coaching.\n(+61) 416156733\ndreambodycoaching@gmail.com"
+    content = "Dear " + user["name"] + ", \nPlease find attached the free resources to help you achieve your fitness goals.\n\nYours sincerely,\nDream Body Coaching.\n(+61) 416156733\ndreambcoaching@gmail.com"
 
     # Create email object
     email = MIMEMultipart()
