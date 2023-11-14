@@ -13,7 +13,7 @@ const SpartanGeneralPage = () => {
         try {
         // Post Request
         const response = await Axios.post(
-            "http://127.0.0.1:8080/signup",
+            "https://singular-arcana-405014.ts.r.appspot.com",
             {
             email: email,
             name: name,
