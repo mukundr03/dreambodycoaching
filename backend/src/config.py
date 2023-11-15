@@ -12,4 +12,5 @@ Description: Configuration information for the API server
 
 port = 8080
 
-url = f"http://localhost:{port}/"
+url = "https://singular-arcana-405014.ts.r.appspot.com"
+
