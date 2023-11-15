@@ -78,9 +78,9 @@ def handle_excel():
     return send_file(excel_name, as_attachment=True, mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
 
 
-# To run the API server
-if __name__ == "__main__":
-    signal.signal(signal.SIGINT, quit_gracefully)
-    application.run(port=config.port, debug=True)
+# # To run the API server
+# if __name__ == "__main__":
+#     signal.signal(signal.SIGINT, quit_gracefully)
+#     application.run(port=config.port, debug=True)
     
     # application.run(port=config.port)
