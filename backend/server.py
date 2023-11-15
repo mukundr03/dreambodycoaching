@@ -11,6 +11,7 @@ Description: Contains the all functionality related to the API server
 # Imports
 import signal
 import sys
+print(sys.path)
 from json import dumps
 from flask import Flask, request, send_from_directory, send_file
 from openpyxl import load_workbook, Workbook
