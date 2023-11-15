@@ -81,6 +81,6 @@ def handle_excel():
 # To run the API server
 if __name__ == "__main__":
     signal.signal(signal.SIGINT, quit_gracefully)
-    application.run()
+    application.run(port=config.port, debug=True)
     
     # application.run(port=config.port)
