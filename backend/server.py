@@ -17,7 +17,7 @@ from openpyxl import load_workbook, Workbook
 from flask_cors import CORS
 
 # Functions
-from src.config import config
+from src import config
 from src.signup import signup, export_to_excel
 from src.email import send_email
 from src.database import clear_store
