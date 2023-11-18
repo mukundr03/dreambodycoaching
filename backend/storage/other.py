@@ -8,7 +8,7 @@ Description: Contains helper functions if needed
 
 '''
 
-from src.config import url
+from backend.storage.config import url
 
 CLEAR_URL = f"{url}/clear"
 

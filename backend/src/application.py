@@ -11,17 +11,13 @@ Description: Contains the all functionality related to the API server
 # Imports
 import signal
 import sys
-print(sys.path)
 from json import dumps
 from flask import Flask, request, send_from_directory, send_file
-from openpyxl import load_workbook, Workbook
 from flask_cors import CORS
-
+from openpyxl import load_workbook
 # Functions
-from backend.storage import config
-from src.signup import signup, export_to_excel
-from src.email import send_email
-from src.database import clear_store
+from signup import signup, export_to_excel
+from database import clear_store
 
 
 # Exit
@@ -79,8 +75,6 @@ def handle_excel():
 
 
 # # To run the API server
-# if __name__ == "__main__":
-#     signal.signal(signal.SIGINT, quit_gracefully)
-#     application.run(port=config.port, debug=True)
-
-    # application.run(port=config.port)
+if __name__ == "__main__":
+    signal.signal(signal.SIGINT, quit_gracefully)
+    application.run(host='0.0.0.0')

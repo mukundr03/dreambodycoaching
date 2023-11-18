@@ -13,9 +13,9 @@ import os
 from openpyxl import load_workbook, Workbook
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
-from src.database import database
-from src.error import InputError
-from src.email import send_email
+from database import database
+from error import InputError
+from email import send_email
 from flask import send_from_directory
 
 SHEETS_URL = "https://docs.google.com/spreadsheets/d/1q-l5Kt--AAagoRzwOMsO8xJCYRFmcqvE5fR9ahUnm_8/edit#gid=0"

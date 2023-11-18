@@ -1,5 +1,5 @@
-from src.config import port, url
-from src import other
+from backend.storage.config import port, url
+from backend.storage import other
 import requests
 import pytest
 
