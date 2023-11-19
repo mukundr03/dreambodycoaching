@@ -9,7 +9,7 @@
     "rewrites": [
       {
         "source": "/api/**",
-        "function": "api"
+        "function": "http://dreambodycoaching-env.eba-c3irpcdi.ap-southeast-2.elasticbeanstalk.com/"
       },
       {
         "source": "**",
